@@ -2,7 +2,14 @@ defaults:
   -
     scope:
       path: ""
-      type: "posts"
+      type: ""
     values:
       layout: "default"
+      author: "Garry Polley"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "page"
       author: "Garry Polley"

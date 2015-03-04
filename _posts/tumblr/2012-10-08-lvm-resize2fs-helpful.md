@@ -15,9 +15,9 @@ Use lvm and resize2fs to give more space to /opt
 
 How to do:
 
-LVM is a logical volume manager.  I was able to use to add free disk space to an existing linux box’s /opt folder so I could get mongo up and running in a sane configuration.
+LVM is a logical volume manager.  I was able to use to add free disk space to an existing linux box's /opt folder so I could get mongo up and running in a sane configuration.
 
-Here’s what I did:
+Here's what I did:
 
 > df -ah
 ...
@@ -28,10 +28,10 @@ Here’s what I did:
 
 That told me I only had 4.1 G usable on the /opt partition.  For mongo this is a no go.  Next I needed to see how much free space I had left on the box:
 
->vgdisplay 
+>vgdisplay
   --- Volume group ---
 ...
-  Free  PE / Size       20000/ 20000  
+  Free  PE / Size       20000/ 20000
 ..
 
 

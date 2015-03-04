@@ -1,5 +1,5 @@
 ---
-title: Garry Polley Home page
+layout: page
+title: 'Garry Polley Home page'
 ---
 
-Hello World

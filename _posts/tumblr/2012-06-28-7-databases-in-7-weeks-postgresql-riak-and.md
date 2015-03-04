@@ -5,7 +5,7 @@ date: '2012-06-28T14:00:00-05:00'
 tags: []
 tumblr_url: http://blog.garrypolley.com/post/26085691393/7-databases-in-7-weeks-postgresql-riak-and
 ---
-I decided to purchase this book based on a recommendation by a coworker named Tom.  I’ve finished up with the first 4 chapters and it has been a really good read.  I’d highly recommend this book to anyone interested in database technology, or even as a college textbook to help introduce differences among different data stores.  The writers have taken great effort in making the book both readable (it’s very much like a conversation with an expert) and technical so you can truly begin to understand the different databases and the use cases they support.  
+I decided to purchase this book based on a recommendation by a coworker named Tom.  I've finished up with the first 4 chapters and it has been a really good read.  I'd highly recommend this book to anyone interested in database technology, or even as a college textbook to help introduce differences among different data stores.  The writers have taken great effort in making the book both readable (it's very much like a conversation with an expert) and technical so you can truly begin to understand the different databases and the use cases they support.  
 
 
 
@@ -13,7 +13,7 @@ I decided to purchase this book based on a recommendation by a coworker named T
 
 
 
-I’ll give a very brief summary of each chapter I’ve read so far with a rating (terrible, bad, okay, good, great) and some of the caveats to getting setup since newer versions of the software have been released since the books publication.
+I'll give a very brief summary of each chapter I've read so far with a rating (terrible, bad, okay, good, great) and some of the caveats to getting setup since newer versions of the software have been released since the books publication.
 
 
 
@@ -53,7 +53,7 @@ Summary:
 
 
 
-  My opinion is pretty biased though because I already knew a good amount about SQL so that section was as exciting/enticing to read.  Riak is a key value store that allows you to do map-reduce jobs.  It’s pretty cool, and really fast.  One of the cooler ways I could see it being used for would be a static content server.  That way it could serve it all from its cache instead of disk.  It would be similar to loading from a technology like memcahced but cooler, because it has a REST api to manipulate its data.  
+  My opinion is pretty biased though because I already knew a good amount about SQL so that section was as exciting/enticing to read.  Riak is a key value store that allows you to do map-reduce jobs.  It's pretty cool, and really fast.  One of the cooler ways I could see it being used for would be a static content server.  That way it could serve it all from its cache instead of disk.  It would be similar to loading from a technology like memcahced but cooler, because it has a REST api to manipulate its data.  
 
 
 
@@ -65,11 +65,11 @@ Caveats:
 
 
 
-  There weren’t really any caveats.  Below are the commands I ran to get it up and running.
+  There weren't really any caveats.  Below are the commands I ran to get it up and running.
 
 
 
-garry@garry-VirtualBox:~/riak$ dev/dev1/bin/riak startgarry@garry-VirtualBox:~/riak$ dev/dev2/bin/riak startgarry@garry-VirtualBox:~/riak$ dev/dev3/bin/riak startgarry@garry-VirtualBox:~/riak$ dev/dev2/bin/riak-admin cluster join dev1@127.0.0.1 Success: staged join request for ‘dev2@127.0.0.1’ to ‘dev1@127.0.0.1’garry@garry-VirtualBox:~/riak$ dev/dev3/bin/riak-admin cluster join dev2@127.0.0.1Success: staged join request for ‘dev3@127.0.0.1’ to ‘dev2@127.0.0.1’
+garry@garry-VirtualBox:~/riak$ dev/dev1/bin/riak startgarry@garry-VirtualBox:~/riak$ dev/dev2/bin/riak startgarry@garry-VirtualBox:~/riak$ dev/dev3/bin/riak startgarry@garry-VirtualBox:~/riak$ dev/dev2/bin/riak-admin cluster join dev1@127.0.0.1 Success: staged join request for ‘dev2@127.0.0.1' to ‘dev1@127.0.0.1'garry@garry-VirtualBox:~/riak$ dev/dev3/bin/riak-admin cluster join dev2@127.0.0.1Success: staged join request for ‘dev3@127.0.0.1' to ‘dev2@127.0.0.1'
 
 
 
@@ -89,7 +89,7 @@ Summary:
 
 
 
-   My favorite part about HBase is the default versioning.  Meaning you don’t really need audit tables, because it keeps the older version around forever (defaults to 3).  It also supports Thrift (a binary protocol), so you don’t have to work with heavy http traffic in a distributed system.  
+   My favorite part about HBase is the default versioning.  Meaning you don't really need audit tables, because it keeps the older version around forever (defaults to 3).  It also supports Thrift (a binary protocol), so you don't have to work with heavy http traffic in a distributed system.  
 
 
 
@@ -109,11 +109,11 @@ Caveats:
 
 
 
-   After following the steps in the book I did a gem install of hbase and thrift.  I had to do a gem search hbase and a gem search thrift to find the correct package.  I kept getting an error on Apache::Hadoop::Hbase::Thrift.new( protocol ) section in the thrift_example.rb, this was when I quit doing and continued reading.  I couldn’t find the Apache namespace/package for ruby.
+   After following the steps in the book I did a gem install of hbase and thrift.  I had to do a gem search hbase and a gem search thrift to find the correct package.  I kept getting an error on Apache::Hadoop::Hbase::Thrift.new( protocol ) section in the thrift_example.rb, this was when I quit doing and continued reading.  I couldn't find the Apache namespace/package for ruby.
 
 
 
-All in all this book is really good so far and I look forward to reading more.  Feel free to comment and let me know what you think of the book.  Also, if you figured out the error around the Apache namespace, that’d be really cool.  
+All in all this book is really good so far and I look forward to reading more.  Feel free to comment and let me know what you think of the book.  Also, if you figured out the error around the Apache namespace, that'd be really cool.  
 
 
 
