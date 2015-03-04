@@ -1,15 +1,9 @@
+encoding: UTF-8
 defaults:
   -
     scope:
       path: ""
       type: ""
-    values:
-      layout: "default"
-      author: "Garry Polley"
-  -
-    scope:
-      path: ""
-      type: "posts"
     values:
       layout: "page"
       author: "Garry Polley"

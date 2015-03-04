@@ -1,6 +1,7 @@
 # Project specific ignores
 # --------------
 Gemfile.lock
+_site/
 # --------------
 
 # osx ignores
