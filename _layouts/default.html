@@ -12,18 +12,80 @@
   <script src="/js/respond.min.js"></script>
   <![endif]-->
 </head>
-<body class="wrap">
+<body>
 
-  <h1>Posts</h1>
-  <ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-  </ul>
+  <div class="row">
+    <div class="col-xs-12">
+      <header role="banner">
+        <nav role="navigation" class="navbar navbar-default">
+          <div class="container">
+            <ul class="nav navbar-nav">
+              <li><a href="{{ site.url }}">Home</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </div>
 
-  {{ content }}
+    <div class="container">
+      <div class="hidden-xs col-sm-3">
+        <aside class="panel panel-info">
+          <div class="panel-heading">
+            <h1 class="panel-title">Contact Info</h1>
+          </div>
+          <div class="panel-body">
+            <dl>
+              <dt>Twitter</dt> <dd><a target="_blank" href="https://twitter.com/garrypolley">@garrypolley</a></dd>
+              <dt>Github</dt> <dd><a target="_blank" href="https://github.com/garrypolley">@garrypolley</a></dd>
+              <dt>Email</dt> <dd><a target="_blank" href="garrympolley+mywebsite@gmail.com">garrympolley@gmail.com</a></dd>
+              <dt>Résumé</dt> <dd><a target="_blank" href="https://docs.google.com/document/d/1NT3KopYqebcJH9rV3D-gT1ie2CNhnbR8u01BIJDaWOU/">résumé</a></dd>
+            </dl>
+          </div>
+        </aside>
 
+        <aside class="panel panel-info">
+          <div class="panel-heading">
+            <h1 class="panel-title">Posts</h1>
+          </div>
+          <ul class="list-group">
+          {% for post in site.posts %}
+            <li class="list-group-item">
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+          {% endfor %}
+          </ul>
+        </aside>
+      </div>
+
+      <div class="col-xs-12 col-sm-9">
+        <main>
+          {{ content }}
+        </main>
+      </div>
+
+      <div class="visible-xs">
+        <aside>
+          <h1>Contact Info</h1>
+          <dl>
+            <dt>Twitter</dt> <dd><a target="_blank" href="https://twitter.com/garrypolley">@garrypolley</a></dd>
+            <dt>Github</dt> <dd><a target="_blank" href="https://github.com/garrypolley">@garrypolley</a></dd>
+            <dt>Email</dt> <dd><a target="_blank" href="garrympolley+mywebsite@gmail.com">garrympolley@gmail.com</a></dd>
+            <dt>Résumé</dt> <dd><a target="_blank" href="https://docs.google.com/document/d/1NT3KopYqebcJH9rV3D-gT1ie2CNhnbR8u01BIJDaWOU/">résumé</a></dd>
+          </dl>
+        </aside>
+
+        <aside>
+          <h1>Posts</h1>
+          <ul>
+          {% for post in site.posts %}
+            <li>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+          {% endfor %}
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

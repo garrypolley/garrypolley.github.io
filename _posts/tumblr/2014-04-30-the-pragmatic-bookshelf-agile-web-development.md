@@ -8,8 +8,7 @@ tags:
 - web development
 tumblr_url: http://blog.garrypolley.com/post/84381936563/the-pragmatic-bookshelf-agile-web-development
 ---
-The Pragmatic Bookshelf | Agile Web Development with Rails 4
-title: Agile Web Development with Rails 4, by: Sam Ruby, isbn: 9781937785567, date: 2013-09-27
+<a href="https://pragprog.com/book/rails4/agile-web-development-with-rails-4" target="_blank">Agile Web Development with Rails 4</a>
 
 I'm naturally a Django developer and have been for a few years now.  In that time I'd like to think I've gotten pretty good at both Python and Django.  During the time I've worked with Django I have helped to build apps ranging from personal health records to sites designed to connect developers with designers.  Through this time I've always been curious how other web frameworks approach the same problem.  With that in mind I've begun to take a look at Rails (the arch nemesis, some might say, to Django).
 
