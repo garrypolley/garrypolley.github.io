@@ -5,87 +5,122 @@
   <title>{{ page.title }}</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="generator" content="Jekyll v{{ jekyll.version }}">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
   <!--[if lt IE 9]>
-  <script src="/js/html5shiv.min.js"></script>
-  <script src="/js/respond.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
+  <style type="text/css">
+    html {
+      background-color: #FFFFFD;
+    }
+
+    body {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: column;
+      flex-flow: column;
+      padding: 0;
+    }
+
+    .site-navigation {
+      background-color: #E9E9E9;
+    }
+
+    /* Custom, iPhone Retina */
+    @media only screen and (min-width: 320px) {
+      .site-navigation {
+        padding: 0 25px 0 25px;
+      }
+
+      main {
+        padding: 0 25px 0 25px;
+      }
+    }
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (min-width: 480px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width: 768px) {
+    }
+
+    @media only screen and (max-width: 992px) {
+      .site-navigation {
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        -ms-flex-order: 2;
+        -webkit-order: 2;
+        order: 2;
+      }
+
+      main {
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        -ms-flex-order: 1;
+        -webkit-order: 1;
+        order: 1;
+      }
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width: 992px) {
+      body {
+        -webkit-flex-flow: row;
+        flex-flow: row;
+      }
+
+      .site-navigation {
+        width: 250px;
+      }
+
+      main {
+        width: 600px;
+      }
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width: 1200px) {
+      .site-navigation {
+        width: 250px;
+      }
+
+      main {
+        width: 900px;
+      }
+    }
+  </style>
 </head>
 <body>
+  <aside class="site-navigation" role="navigation">
+    <section class="contact-info">
+      <h1>Contact Info</h1>
+      <dl>
+        <dt>Twitter</dt> <dd><a target="_blank" href="https://twitter.com/garrypolley">@garrypolley</a></dd>
+        <dt>Github</dt> <dd><a target="_blank" href="https://github.com/garrypolley">@garrypolley</a></dd>
+        <dt>Email</dt> <dd><a target="_blank" href="garrympolley+mywebsite@gmail.com">garrympolley@gmail.com</a></dd>
+        <dt>Résumé</dt> <dd><a target="_blank" href="https://docs.google.com/document/d/1NT3KopYqebcJH9rV3D-gT1ie2CNhnbR8u01BIJDaWOU/">résumé</a></dd>
+      </dl>
+    </section>
 
-  <div class="row">
-    <div class="col-xs-12">
-      <header role="banner">
-        <nav role="navigation" class="navbar navbar-default">
-          <div class="container">
-            <ul class="nav navbar-nav">
-              <li><a href="{{ site.url }}">Home</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-    </div>
+    <section class="posts">
+      <h1>Posts</h1>
+      <ul>
+      {% for post in site.posts %}
+        <li>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+      </ul>
+    </section>
+  </aside>
 
-    <div class="container">
-      <div class="hidden-xs col-sm-3">
-        <aside class="panel panel-info">
-          <div class="panel-heading">
-            <h1 class="panel-title">Contact Info</h1>
-          </div>
-          <div class="panel-body">
-            <dl>
-              <dt>Twitter</dt> <dd><a target="_blank" href="https://twitter.com/garrypolley">@garrypolley</a></dd>
-              <dt>Github</dt> <dd><a target="_blank" href="https://github.com/garrypolley">@garrypolley</a></dd>
-              <dt>Email</dt> <dd><a target="_blank" href="garrympolley+mywebsite@gmail.com">garrympolley@gmail.com</a></dd>
-              <dt>Résumé</dt> <dd><a target="_blank" href="https://docs.google.com/document/d/1NT3KopYqebcJH9rV3D-gT1ie2CNhnbR8u01BIJDaWOU/">résumé</a></dd>
-            </dl>
-          </div>
-        </aside>
-
-        <aside class="panel panel-info">
-          <div class="panel-heading">
-            <h1 class="panel-title">Posts</h1>
-          </div>
-          <ul class="list-group">
-          {% for post in site.posts %}
-            <li class="list-group-item">
-              <a href="{{ post.url }}">{{ post.title }}</a>
-            </li>
-          {% endfor %}
-          </ul>
-        </aside>
-      </div>
-
-      <div class="col-xs-12 col-sm-9">
-        <main>
-          {{ content }}
-        </main>
-      </div>
-
-      <div class="visible-xs">
-        <aside>
-          <h1>Contact Info</h1>
-          <dl>
-            <dt>Twitter</dt> <dd><a target="_blank" href="https://twitter.com/garrypolley">@garrypolley</a></dd>
-            <dt>Github</dt> <dd><a target="_blank" href="https://github.com/garrypolley">@garrypolley</a></dd>
-            <dt>Email</dt> <dd><a target="_blank" href="garrympolley+mywebsite@gmail.com">garrympolley@gmail.com</a></dd>
-            <dt>Résumé</dt> <dd><a target="_blank" href="https://docs.google.com/document/d/1NT3KopYqebcJH9rV3D-gT1ie2CNhnbR8u01BIJDaWOU/">résumé</a></dd>
-          </dl>
-        </aside>
-
-        <aside>
-          <h1>Posts</h1>
-          <ul>
-          {% for post in site.posts %}
-            <li>
-              <a href="{{ post.url }}">{{ post.title }}</a>
-            </li>
-          {% endfor %}
-          </ul>
-        </aside>
-      </div>
-    </div>
-  </div>
+  <main>
+    {{ content }}
+  </main>
 </body>
 </html>
