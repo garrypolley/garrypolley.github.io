@@ -28,15 +28,66 @@
 
     .site-navigation {
       background-color: #E9E9E9;
+      border-right: solid 1px #868686;
+      overflow-y: scroll;
+    }
+
+    .site-navigation .contact-info {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    .site-navigation .posts h1 {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    .site-navigation .posts ul {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+
+    .site-navigation .posts ul li {
+      list-style:  none;
+      border-top: solid 1px #868686;
+      border-bottom: 0;
+      height: 40px;
+      line-height: 40px;
+      vertical-align: middle;
+      text-align: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      background-color: LightSkyBlue;
+    }
+
+    .site-navigation .posts ul li:hover {
+      cursor: pointer;
+      background-color: MediumTurquoise;
+    }
+
+    .site-navigation .posts ul li.active {
+      background-color: MediumTurquoise;
+      border-right: solid 5px red;
+    }
+
+    .site-navigation .posts ul li a, .site-navigation .posts ul li a:active, .site-navigation .posts ul li a:visited {
+      color: white;
+      font-family: Verdana;
+      text-decoration: none;
+      padding-left: 25px;
+      padding-right: 25px;
+      display: block;
+    }
+
+    .site-navigation .posts ul li:last-child {
+      border-bottom: solid 1px #868686;
     }
 
     /* Custom, iPhone Retina */
     @media only screen and (min-width: 320px) {
       main {
-        padding: 0 25px 0 25px;
-      }
-
-      .site-navigation {
         padding: 0 25px 0 25px;
       }
     }
@@ -76,18 +127,7 @@
       }
 
       .site-navigation {
-        width: 250px;
-      }
-
-      main {
-        width: 600px;
-      }
-    }
-
-    /* Large Devices, Wide Screens */
-    @media only screen and (min-width: 1200px) {
-      .site-navigation {
-        width: 250px;
+        width: 300px;
         position: fixed;
         height: 100%;
       }
@@ -96,6 +136,11 @@
         width: 900px;
         margin-left: 300px;
       }
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width: 1200px) {
+
     }
   </style>
 </head>
@@ -115,8 +160,8 @@
       <h1>Posts</h1>
       <ul>
       {% for post in site.posts %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
+        <li {% if post.url == page.url %}class="active"{% endif %}>
+          <a class="{{ active }}" href="{{ post.url }}">{{ post.title }}</a>
         </li>
       {% endfor %}
       </ul>
