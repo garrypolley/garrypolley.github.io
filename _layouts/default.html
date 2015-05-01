@@ -15,7 +15,7 @@
   <style type="text/css">
     html {
       background-color: #FFFFFD;
-      height: 100%;
+      min-height: 100%;
     }
 
     body {
@@ -88,10 +88,13 @@
     @media only screen and (min-width: 1200px) {
       .site-navigation {
         width: 250px;
+        position: fixed;
+        height: 100%;
       }
 
       main {
         width: 900px;
+        margin-left: 300px;
       }
     }
   </style>
