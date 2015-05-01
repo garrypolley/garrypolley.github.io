@@ -33,8 +33,11 @@
     }
 
     .site-navigation .contact-info {
-      padding-left: 25px;
-      padding-right: 25px;
+      padding-left: 45px;
+    }
+
+    .site-navigation .contact-info h1 {
+      margin-bottom: 10px;
     }
 
     .site-navigation .contact-info h1 a, .site-navigation .contact-info h1 a:visited {
@@ -42,9 +45,16 @@
       color: black;
     }
 
+    .site-navigation .contact-info h1 a img {
+      border: 3px solid #0a3553;
+    }
+
+    .site-navigation .contact-info h2 {
+      margin: 0;
+    }
+
     .site-navigation .posts h1 {
-      padding-left: 25px;
-      padding-right: 25px;
+      padding-left: 45px;
     }
 
     .site-navigation .posts ul {
@@ -114,6 +124,10 @@
         order: 2;
       }
 
+      .site-navigation .contact-info {
+        display: none;
+      }
+
       main {
         -webkit-box-ordinal-group: 1;
         -moz-box-ordinal-group: 1;
@@ -152,7 +166,8 @@
 <body>
   <aside class="site-navigation" role="navigation">
     <section class="contact-info">
-      <h1><a href="/">Home</a></h1>
+      <h1><a href="/"><img src="/images/avatar-80-80.png" alt="Garry Polley" /></a></h1>
+      <h2>Garry Polley</h2>
       <dl>
         <dt>Twitter</dt> <dd><a target="_blank" href="https://twitter.com/garrypolley">@garrypolley</a></dd>
         <dt>Github</dt> <dd><a target="_blank" href="https://github.com/garrypolley">@garrypolley</a></dd>
