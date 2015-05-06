@@ -19,36 +19,44 @@ LVM is a logical volume manager.  I was able to use to add free disk space to an
 
 Here's what I did:
 
+```bash
 > df -ah
 ...
 /dev/mapper/vg00-opt
                        4.1G  1.1G   3 25% /opt
 ...
+```
 
 
 That told me I only had 4.1 G usable on the /opt partition.  For mongo this is a no go.  Next I needed to see how much free space I had left on the box:
 
->vgdisplay
+```bash
+> vgdisplay
   --- Volume group ---
 ...
   Free  PE / Size       20000/ 20000
-..
+...
+```
 
 
 Seeing that I had a ton of free space I then added 15G to my /opt partition
 
+```bash
 > lvresize -L +100%FREE /dev/mapper/vg00-opt
-
+```
 
 Now that it was added, I needed the file system to see it as well.
 
+```bash
 > resize2fs /dev/mapper/vg00-opt
-
+```
 
 Boom, now I have increased my partition size.
 
+```bash
 > df -ah
 ...
 /dev/mapper/vg00-opt
                        26G  4.5G   20G  19% /opt
 ...
+```

@@ -10,5 +10,5 @@ dotJS 2012 - Jeremy Ashkenas - Symbiotic Languages (by dotconferences)
 This is a really good talk on how to think about languages. 
 
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe width="1280" height="750" src="https://www.youtube.com/embed/Kq5hmbjaBFk" frameborder="0" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/Kq5hmbjaBFk" frameborder="0" allowfullscreen></iframe>
 </div>

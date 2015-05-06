@@ -7,12 +7,29 @@
   <meta name="generator" content="Jekyll v{{ jekyll.version }}">
 
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="/styles/code-highlight.css">
   <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
   <!--[if lt IE 9]>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
   <style type="text/css">
+    /* Colors:
+      whtie: #FFFFFD;
+      offWhiteLight: #FCFFF5;
+      lightMutedGreen: #D1DBBD;
+      mutedGreen: #91AA9D;
+      blue: #3E606F;
+      darkBlue: #193441;
+      purpleBorder: #0a3553;
+      navigationColor: #e9e9e9;
+
+      greyBackGround: #C5CACC;
+      dargGrey: #7B7E7F;
+      offWhiteMain: #F6FDFF;
+      lightSafeBlue: #5DDBFF;
+      darkKindGreen: #4A747F;
+    */
     html {
       background-color: #FFFFFD;
       min-height: 100%;
@@ -27,8 +44,8 @@
     }
 
     .site-navigation {
-      background-color: #E9E9E9;
-      border-right: solid 1px #868686;
+      background-color: #C5CACC;
+      border-right: solid 1px #7B7E7F;
       overflow-y: scroll;
     }
 
@@ -66,7 +83,7 @@
 
     .site-navigation .posts ul li {
       list-style:  none;
-      border-top: solid 1px #868686;
+      border-top: solid 1px #7B7E7F;
       border-bottom: 0;
       height: 40px;
       line-height: 40px;
@@ -74,21 +91,21 @@
       text-align: center;
       overflow: hidden;
       text-overflow: ellipsis;
-      background-color: LightSkyBlue;
+      background-color: #4A747F;
     }
 
     .site-navigation .posts ul li:hover {
       cursor: pointer;
-      background-color: MediumTurquoise;
+      background-color: #5DDBFF;
     }
 
     .site-navigation .posts ul li.active {
-      background-color: MediumTurquoise;
-      border-right: solid 5px red;
+      background-color: #7B7E7F;
+      border-right: solid 5px #5DDBFF;
     }
 
     .site-navigation .posts ul li a, .site-navigation .posts ul li a:active, .site-navigation .posts ul li a:visited {
-      color: white;
+      color: #F6FDFF;
       font-family: Verdana;
       text-decoration: none;
       padding-left: 25px;
@@ -97,7 +114,7 @@
     }
 
     .site-navigation .posts ul li:last-child {
-      border-bottom: solid 1px #868686;
+      border-bottom: solid 1px #7B7E7F;
     }
 
     /* Custom, iPhone Retina */
@@ -122,10 +139,6 @@
         -ms-flex-order: 2;
         -webkit-order: 2;
         order: 2;
-      }
-
-      .site-navigation .contact-info {
-        display: none;
       }
 
       main {
@@ -177,7 +190,6 @@
     </section>
 
     <section class="posts">
-      <h1>Posts</h1>
       <ul>
       {% for post in site.posts %}
         <li {% if post.url == page.url %}class="active"{% endif %}>
