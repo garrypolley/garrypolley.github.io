@@ -38,10 +38,6 @@
       padding: 0;
     }
 
-    main article > div {
-    	padding: 50px 30px 5px 30px;
-    }
-
     main .article-title {
     	position: fixed;
     	margin: 0;
@@ -49,6 +45,9 @@
     	background-color: #4A747F;
     	width: 100%;
     	border: solid 1px #7B7E7F;
+    	max-height: 47px;
+    	line-height: 47px;
+    	overflow: hidden;
     }
 
      main .article-title a {
@@ -56,6 +55,10 @@
      	color: #F6FDFF;
      	display: block;
      }
+
+     main article > div {
+    	padding: 60px 30px 5px 30px;
+    }
 
     .site-navigation {
       background-color: #C5CACC;
@@ -137,6 +140,7 @@
 
     /* Extra Small Devices, Phones */
     @media only screen and (min-width: 480px) {
+
     }
 
     /* Small Devices, Tablets */
