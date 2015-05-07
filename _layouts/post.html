@@ -6,7 +6,13 @@ layout: default
   <article>
     <h1 class="article-title"><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h1>
     <div>
-    	{{ content }}
-  	</div>
+      {{ content }}
+      <footer>
+        <dl>
+          <dt>Published</dt><dd>{{ page.date | date: "%-d %B, %Y" }}</dd>
+          <dt>License</dt><dd><a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons 4.0</a></dd>
+        </dl>
+      </footer>
+    </div>
   </article>
 </section>
