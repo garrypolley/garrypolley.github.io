@@ -9,6 +9,7 @@
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <link rel="stylesheet" type="text/css" href="/styles/code-highlight.css">
   <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/0.4.0/anchor.min.css">
   <!--[if lt IE 9]>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -60,6 +61,44 @@
     	padding: 60px 30px 5px 30px;
     }
 
+    table {
+		  padding: 0;
+		  margin: 15px 0;
+		}
+		table tr {
+		  border-top: 1px solid #7B7E7F;
+		  background-color: #FFFFFD;
+		  margin: 0;
+		  padding: 0;
+		}
+
+		table tr:nth-child(2n) {
+		  background-color: #C5CACC;
+		}
+
+		table tr th {
+		  font-weight: bold;
+		  border: 1px solid #7B7E7F;
+		  text-align: left;
+		  margin: 0;
+		  padding: 6px 13px;
+		}
+
+		table tr td {
+		  border: 1px solid #7B7E7F;
+		  text-align: left;
+		  margin: 0;
+		  padding: 6px 13px;
+		}
+
+		table tr th :first-child, table tr td :first-child {
+		  margin-top: 0;
+		}
+
+		table tr th :last-child, table tr td :last-child {
+		  margin-bottom: 0;
+		}
+
     .site-navigation {
       background-color: #C5CACC;
       border-right: solid 1px #7B7E7F;
@@ -70,16 +109,16 @@
       padding-left: 45px;
     }
 
-    .site-navigation .contact-info h1 {
+    .site-navigation .contact-info header {
       margin-bottom: 10px;
     }
 
-    .site-navigation .contact-info h1 a, .site-navigation .contact-info h1 a:visited {
+    .site-navigation .contact-info header a, .site-navigation .contact-info header a:visited {
       text-decoration: none;
       color: black;
     }
 
-    .site-navigation .contact-info h1 a img {
+    .site-navigation .contact-info header a img {
       border: 3px solid #0a3553;
     }
 
@@ -194,7 +233,7 @@
 <body>
   <aside class="site-navigation" role="navigation">
     <section class="contact-info">
-      <h1><a href="/"><img src="/images/avatar-80-80.png" alt="Garry Polley" /></a></h1>
+      <header><a href="/"><img src="/images/avatar-80-80.png" alt="Garry Polley" /></a></header>
       <h2>Garry Polley</h2>
       <dl>
         <dt>Twitter</dt> <dd><a target="_blank" href="https://twitter.com/garrypolley">@garrypolley</a></dd>
@@ -218,5 +257,9 @@
   <main>
     {{ content }}
   </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/0.4.0/anchor.min.js"></script>
+  <script>
+  	addAnchors();
+  </script
 </body>
 </html>
