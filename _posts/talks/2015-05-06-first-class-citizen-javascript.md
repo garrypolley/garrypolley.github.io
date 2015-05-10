@@ -14,8 +14,8 @@ by choosing to have Python or Ruby as your core language:
 
 * Consistent and stable runtime
 * Manageable testing
-* Built in logging
 * Error handling
+* Built in logging
 
 Why bring up these pretty standard features that exist is nearly every modern
 language? Because, most people seem to think JavaScript either does
@@ -89,7 +89,42 @@ when paired with the libraries. For instance you may use [jQuery][jquery-url]
 for a lot of your JavaScript code. This abstraction helps you achieve a consistent
 and stable environment.
 
+## Manageable testing
+
+Nearly every language or framework comes with some really good work flows for testing.
+This usually leads to almost all code that can be tested getting tested.  For
+instance if you have an ATM application where you have a person deposit money
+or withdraw money you would test all parts of this work flow.
+
+For some reason when it comes to the browser many developers think it's okay
+to leave work flows untested that are affected by JavaScript. Worse because
+these work flows are often not tested changes often cause defects in the
+application later.  Worse still when JavaScript encounters errors it often
+results in the application just not working.
+
+It may sound like testing is hopeless in JavaScript. That is not the case
+there are plenty of ways to test JavaScript.  In fact here are a list of
+frameworks that can help you out with testing (and a [comparison][js-testing-comparison-url]:
+
+* [Jasmine][jasmine-url]
+* [Mocha][mocha-url]
+* [QUnit][qunit-js]
+
+With so many tools available there is no excuse for not testing every part
+of an application that has end user impact. All of your JavaScript should
+be tested.  If it's not tested it shouldn't exist.
+
+Some will say that with closures (since JavaScript is heavily functional) that
+testing is really hard.  Well, just because something is hard does not give
+you freedom to not do it. Further, if the code is designed better then testing
+usually isn't an issue. A good sign of "code smell" is not being able to more
+easily create tests. This statement holds true to me for _all_ code.
+
 
 [jquery-url]: https://jquery.com/
 [d3-url]: http://d3js.org/
 [r2d2-url]: https://github.com/mhemesath/r2d3/
+[js-testing-comparison-url]: https://coderwall.com/p/ntbixw/javascript-test-framework-comparison
+[jasmine-url]: http://jasmine.github.io/
+[mocha-url]: http://mochajs.org/
+[qunit-js]: http://qunitjs.com/
