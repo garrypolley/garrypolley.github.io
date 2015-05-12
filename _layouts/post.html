@@ -12,7 +12,10 @@ layout: default
         <dl>
           <dt>Published</dt><dd>{{ page.date | date: "%-d %B, %Y" }}</dd>
           <dt>License</dt><dd><a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons 4.0</a></dd>
+          {% if page.slideshow %}<dt>Slideshow</dt><dd><a href="{{ page.slideshow }}">SlideShow</a></dd>{% endif %}
         </dl>
+
+        <iframe src="https://docs.google.com/presentation/d/{{ page.slideshowId }}/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
       </footer>
     </div>
   </article>

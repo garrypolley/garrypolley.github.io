@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 'First Class Citizen: JavaScript'
+slideshow: 'https://goo.gl/VgxV33'
+slideshowId: '1wpYhg5KxYcjCh5X2LohTxT9b3gyEKts-tCDaxbYYe4Q'
 ---
 
 Think of the last time you were given a project or a new website to build.
@@ -159,7 +161,7 @@ Wrap the function passed to `setTimeout` in a try catch and you'll be good. For 
 
 ```js
 var realFunction = function () {
-  c = a + q;
+  c = a + b;
 }
 
 var handleErrors = function (func) {
