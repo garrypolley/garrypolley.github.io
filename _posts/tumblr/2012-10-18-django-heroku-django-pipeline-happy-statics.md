@@ -20,7 +20,7 @@ Static content is one piece of web architecture and Django Pipeline makes it eas
 Using Django, Heroku, and django-pipeline we've achieved simple and repeatable static content development. With an explanation of each piece out of the way, we can now get into how we did this.
 
 ### Setup your project with django-pipeline:
-The first step here is to make sure you have a Django application that actually needs to be deployed. I have a sample app for this blog post here: https://github.com/garrypolley/django-heroku-static-example. It is already setup and ready to go. Look at the bottom of the settings.py file to see the djanog-pipeline settings that are needed.  You'll also need to make sure you use `{% raw %}{% compressed_css ‘PIPELINE_KEY' %}{% endraw %}` and `{% raw %}{% compressed_js ‘PIPLINE_KEY' %}{% endraw %}` in your templates.  Look at the templates in the example app for pointers and see how they relate to the django-pipeline config.
+The first step here is to make sure you have a Django application that actually needs to be deployed. I have a sample app for this blog post here: https://github.com/garrypolley/django-heroku-static-example. It is already setup and ready to go. Look at the bottom of the settings.py file to see the djanog-pipeline settings that are needed.  You'll also need to make sure you use `{% raw %}{% compressed_css ‘PIPELINE_KEY' %}{% endraw %}` and `{% raw %}{% compressed_js ‘PIPLINE_KEY' %}{% endraw %}` in your templates.  Look at the templates in the example app for pointers and see how they relate to the django-pipeline config.
 settings.py:
 
 ### Next create a Heroku app

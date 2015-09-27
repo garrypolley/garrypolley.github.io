@@ -40,7 +40,6 @@
     }
 
     main .article-title {
-    	position: fixed;
     	margin: 0;
     	padding: 5px 30px 5px 30px;
     	background-color: #4A747F;
@@ -49,15 +48,31 @@
     	max-height: 47px;
     	line-height: 47px;
     	overflow: hidden;
+    	position: fixed;
     }
 
-     main .article-title a {
+    main .inline-article-title {
+    	font-size: 1.6rem;
+    	max-height: 37px;
+    	line-height: 37px;
+    }
+
+    main .article-title a {
      	text-decoration: none;
      	color: #F6FDFF;
      	display: block;
-     }
+    }
 
-     main article > div {
+    main .inline-article-title a {
+    	text-decoration: none;
+    	color: #000;
+    }
+
+    main .inline-article-title a:hover {
+    	text-decoration: underline;
+    }
+
+     main > section > article > div {
     	padding: 60px 30px 5px 30px;
     }
 
@@ -250,15 +265,7 @@
       </dl>
     </section>
 
-    <section class="posts">
-      <ul>
-      {% for post in site.posts %}
-        <li {% if post.url == page.url %}class="active"{% endif %}>
-          <a class="{{ active }}" href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-      {% endfor %}
-      </ul>
-    </section>
+    {% include side_bar.html site=site %}
   </aside>
 
   <main>
@@ -266,7 +273,16 @@
   </main>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/0.4.0/anchor.min.js"></script>
   <script>
+
+  	var mq = window.matchMedia('(min-width: 992px)'),
+  		navElement = document.getElementById('active-navigation');
+
+  	// Don't scroll on small screens. It's bad news bears.
+  	if (mq.matches && navElement) {
+  		navElement.scrollIntoView({behavior: "smooth"});
+  	}
+
   	addAnchors();
-  </script
+  </script>
 </body>
 </html>

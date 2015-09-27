@@ -1,0 +1,10 @@
+
+<section>
+  <article>
+    <h1 class="inline-article-title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h1>
+    <small>Published: {{ post.date | date: "%-d %B, %Y" }}</small>
+    <div>
+      {{ post.content | truncatewords:70 }}<br /><a href="{{ post.url }}">See more</a>
+    </div>
+  </article>
+</section>

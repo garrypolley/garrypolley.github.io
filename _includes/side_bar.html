@@ -1,0 +1,9 @@
+<section class="posts">
+  <ul>
+  {% for post in site.posts %}
+    <li {% if post.url == page.url %}class="active" id="active-navigation"{% endif %}>
+      <a class="{{ active }}" href="{{ post.url }}" title="{{ post.title | truncatewords: 3}}. Published: {{ post.date | date: '%-d %B, %Y' }} ">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+</section>

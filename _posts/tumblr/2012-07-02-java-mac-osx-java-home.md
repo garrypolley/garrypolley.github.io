@@ -11,4 +11,4 @@ Upon google searching I was lead to this email archive that gave me the solution
 
 I need to add this to my .bash_profile for it to work:
 
-export JAVA_HOME=`/usr/libexec/java_home`
+`export JAVA_HOME=/usr/libexec/java_home`
