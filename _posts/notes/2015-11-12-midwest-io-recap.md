@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Midewest.io: quality over quantity'
+title: 'Midwest.io: quality over quantity'
 ---
 
 If you've not heard about it there is a great conference here in Kansas City
