@@ -23,7 +23,7 @@ away from each talk. Maybe they'll help you maybe they won't.
 
 ## Leagues of Sea and Sky
 
-[Talk Link](https://youtu.be/6Go1H026Knc)
+[Video](https://youtu.be/6Go1H026Knc)
 
 ### Cool Bits
 
@@ -41,7 +41,7 @@ led to some really cool ways of conveying information
 
 ## A Gentle Guide to Genetic Algorithms
 
-[Talk Link](https://www.youtube.com/watch?v=h_jsjPyNu9o)
+[Video](https://youtu.be/h_jsjPyNu9o)
 
 ### Cool Bits
 
@@ -57,7 +57,7 @@ led to some really cool ways of conveying information
 
 ## A Brief History of (Logical) Time
 
-[Talk Link](http://lanyrd.com/2015/midwestio/sdqwfd/)
+[Video](https://youtu.be/b_swtL5bxJg)
 
 ### Cool Bits
 
@@ -94,7 +94,8 @@ failed. True: your code was actually broken when the test fails.
 
 ## Achievement Unlocked: A Better Path to Language Learning
 
-[Talk Link](http://lanyrd.com/2015/midwestio/sdqwfp/)
+* [Talk Link](http://lanyrd.com/2015/midwestio/sdqwfp/)
+* [Slides](http://kanaka.github.io/midwest.io.mal/#/)
 
 ### Cool Bits
 
