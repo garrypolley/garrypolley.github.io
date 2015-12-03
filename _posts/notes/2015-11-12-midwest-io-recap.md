@@ -16,8 +16,6 @@ of the talks below the heading. The notes will be fairly short, you should
 watch the talks. My notes are only here to give you an idea of what I took
 away from each talk. Maybe they'll help you maybe they won't.
 
-(As videos come out I will update links to point to videos)
-
 
 # Day One - November 9th
 
@@ -73,7 +71,7 @@ led to some really cool ways of conveying information
 
 ## How to Write a Worthwhile Test
 
-[Talk Link](http://lanyrd.com/2015/midwestio/sdqwfm/)
+[Video](https://youtu.be/aiDikM9g4x8)
 
 ### Cool Bits
 
@@ -94,7 +92,7 @@ failed. True: your code was actually broken when the test fails.
 
 ## Achievement Unlocked: A Better Path to Language Learning
 
-* [Talk Link](http://lanyrd.com/2015/midwestio/sdqwfp/)
+* [Video](https://youtu.be/lgyOAiRtZGw)
 * [Slides](http://kanaka.github.io/midwest.io.mal/#/)
 
 ### Cool Bits
@@ -109,7 +107,7 @@ failed. True: your code was actually broken when the test fails.
 
 ## Measuring the Performance of Single Page Web Applications
 
-[Talk Link](http://lanyrd.com/2015/midwestio/sdqwft/)
+[Video](https://youtu.be/vvcFutjSKtI)
 
 ### Cool Bits
 
@@ -127,7 +125,7 @@ a feel for what's happening
 
 ## You May Not be a Polyglot, but Your Software Needs to Be
 
-[Talk Link](http://lanyrd.com/2015/midwestio/sdqwfw/)
+[Video](https://youtu.be/923ac4CSqsw)
 
 ### Cool Bits
 
@@ -148,7 +146,7 @@ a feel for what's happening
 
 ## Reliable Concurrency Without the Actor Model
 
-[Talk Link](http://lanyrd.com/2015/midwestio/sdqwfz/)
+[Video](https://youtu.be/8OQUH8q4sMM)
 
 ### Cool Bits
 
@@ -164,7 +162,7 @@ a feel for what's happening
 
 ## Chaos Engineering
 
-[Talk Link](http://lanyrd.com/2015/midwestio/sdqwgb/)
+[Video](https://youtu.be/6OIOpx_dVFY)
 
 ### Cool Bits
 
@@ -184,7 +182,7 @@ a feel for what's happening
 
 ## Securing Your Company's Data: Encryption, Deleting and Other Best Practices
 
-[Talk Link](http://lanyrd.com/2015/midwestio/sdqwgd/)
+[Video](https://youtu.be/cofMh4eMpdA)
 
 ### Cool Bits
 
@@ -198,7 +196,7 @@ a feel for what's happening
 
 ## Sparkling Pandas
 
-[Talk Link](http://www.midwest.io/sessions/#tuesday-4b)
+[Video](https://youtu.be/C-7tHFbjsNw)
 
 ### Cool Bits
 
@@ -214,7 +212,7 @@ a feel for what's happening
 
 ## Writing Custom In-browser Tools for Smarter WebApp Development
 
-[Talk Link](http://lanyrd.com/2015/midwestio/sdqwgm/)
+[Video](https://youtu.be/MTiARCWw6cA)
 
 ### Cool Bits
 
@@ -228,7 +226,7 @@ a feel for what's happening
 
 ## Telling Stories with Data Visualization
 
-[Talk Link](http://lanyrd.com/2015/midwestio/sdqwgp/)
+[Video](https://youtu.be/kDf8Rb3iIRA)
 
 ### Cool Bits
 
@@ -245,7 +243,7 @@ a feel for what's happening
 
 ## Talmudic Maxims to Maximize Your Growth as a Developer
 
-[Talk Link](https://www.youtube.com/watch?v=U5D_Nczx-io)
+[Video](https://youtu.be/U5D_Nczx-io)
 
 **Watch this talk**! It had some of the best content at the conference. Great job [@coderabbi](https://twitter.com/coderabbi)
 
