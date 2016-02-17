@@ -8,7 +8,12 @@ to like the language and how similar it is to Python. Below is an example
 of how I'm planning to handle errors that occur in some goroutines.
 
 The example is borrowed from https://groups.google.com/forum/#!topic/golang-nuts/zAmaq1Q2mqA
-I wanted more rationale on each part and below are the examples:
+I wanted more rationale on each part and below are the examples. I put some effort into
+explaining how each part works and why it works. The comments in the code hopefully give
+a better understanding as to how the go routines and channels work together. 
+
+In order to get a full experience you'll need to update some of the code by commenting
+and uncommenting parts of the code. It should be documented where that is needed.
 
 ```go
 package main
