@@ -14,7 +14,7 @@ stackoverflow post: http://stackoverflow.com/a/39547006/1686511
 
 Here is the code from stackoverflow:
 
-```xaml
+```xml
 <UserControl
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -42,7 +42,7 @@ Here is the code from stackoverflow:
 The most important part here is the use of the `i:Interaction` part. It allows you to call your navigation command from that trigger. 
 So the code I've used in my application to default to the login view is: 
 
-```xaml
+```xml
 <i:Interaction.Triggers>
     <i:EventTrigger EventName="Loaded">
         <i:InvokeCommandAction Command="{Binding NavigateCommand}" CommandParameter="Login"></i:InvokeCommandAction>
