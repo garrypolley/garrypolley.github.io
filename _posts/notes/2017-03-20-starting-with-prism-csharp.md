@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Getting Started with my First Windows Desktop App'
+title: 'Windows Desktop App: Prism Default Page'
 ---
 
 This will be short because it's mostly a note to myself. I just got started doing `WPF` applications using, [Prism](https://github.com/PrismLibrary/Prism).
